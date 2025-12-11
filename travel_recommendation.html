@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TravelBloom - Explore Dream Destination</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1><i class="fas fa-globe-americas"></i> TravelBloom</h1>
+            
+            <div class="nav-links">
+                <a href="#home" onclick="showSection('home')">Home</a>
+                <a href="#about" onclick="showSection('about')">About Us</a>
+                <a href="#contact" onclick="showSection('contact')">Contact Us</a>
+            </div>
+
+            <div id="search-container-main" class="search-container">
+                <input type="text" id="search-input" placeholder="Enter a destination or keyword...">
+                <button id="search-button" class="nav-btn">Search</button>
+                <button id="reset-button" class="nav-btn">Clear</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="social-icons">
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+        <div id="main-landing-view">
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    <h1>EXPLORE<br>DREAM<br>DESTINATION</h1>
+                    <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+                    <button class="cta-button">BOOK NOW</button>
+                </div>
+            </section>
+            
+            <div id="recommendation-results">
+                <p class="search-prompt">Search for "beach", "temple", or "country" recommendations!</p>
+            </div>
+        </div>
+
+        <section id="about" class="about-hero-section">
+            <div class="about-header"><h1>ABOUT US</h1></div>
+            <div class="company-info">
+                <p>Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers. Our mission is to 
+                   <strong>provide the best experience</strong> for people traveling to different destinations around the world. Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in 
+                   <strong>putting our customers first</strong> and <strong>working together</strong> to achieve our goals. Feel free to explore our website to learn more about what we offer!
+                </p>
+            </div>
+            
+            <div class="team-header"><h2>Our Team</h2></div>
+            <div class="team-members-container">
+                
+                <div class="team-member-card">
+                    <img src="images/john_doe.jpg" alt="John Doe" class="team-photo">
+                    <h3>John Doe</h3>
+                    <p>John is responsible for...</p>
+                    <button class="role-button">CEO</button>
+                </div>
+
+                <div class="team-member-card">
+                    <img src="images/celina_thomas.jpg" alt="Celina Thomas" class="team-photo">
+                    <h3>Celina Thomas</h3>
+                    <p>Celina Thomas is responsible for...</p>
+                    <button class="role-button">Team Lead</button>
+                </div>
+
+                <div class="team-member-card">
+                    <img src="images/mike_tysen.jpg" alt="Mike Tysen" class="team-photo">
+                    <h3>Mike Tysen</h3>
+                    <p>Mike Tysen is responsible for...</p>
+                    <button class="role-button">Delivery Head</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact-hero-section">
+            <div class="contact-content">
+                <h1>CONTACT US</h1>
+                <p class="get-in-touch">Get in touch</p>
+            </div>
+            
+            <div class="contact-form-container">
+                <form id="contact-form" action="#" method="POST">
+                    
+                    <div class="form-group">
+                        <label for="name-contact">Name</label>
+                        <input type="text" id="name-contact" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email-contact">Email</label>
+                        <input type="email" id="email-contact" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Submit</button>
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
